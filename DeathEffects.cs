@@ -31,33 +31,6 @@ namespace DeathEffects
                 }
                 return;
             }
-
-            if (File.Exists(Directory + "/DeathEffects.txt"))
-            {
-                File.Delete(Directory + "/DeathEffects.txt");
-                
-                File.CreateText(Directory + "/DeathEffects.txt");
-                using (StreamWriter w = File.AppendText(Directory + "/DeathEffects.txt"))
-                {
-                    w.WriteLine("A DeathEffects plugint készítette: xXThe_HunterXx" + w.NewLine);
-                    w.WriteLine("Készült: [M.G]PerPatrik[HUN] kérésére." + w.NewLine);
-                    w.WriteLine("Sok sikert a Plugin használatához!" + w.NewLine);
-                    w.Close();
-                }
-            }
-            else
-            {
-                File.CreateText(Directory + "/DeathEffects.txt");
-                using (StreamWriter w = File.AppendText(Directory + "/DeathEffects.txt"))
-                {
-                    w.WriteLine("A DeathEffects plugint készítette: xXThe_HunterXx" + w.NewLine);
-                    w.WriteLine("Készült: [M.G]PerPatrik[HUN] kérésére." + w.NewLine);
-                    w.WriteLine("Sok sikert a Plugin használatához!" + w.NewLine);
-                    w.Close();
-                }
-            }
-
-
         }
 
         protected override void Unload()
