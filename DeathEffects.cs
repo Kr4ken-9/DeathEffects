@@ -20,6 +20,7 @@ namespace DeathEffects
             {
                 Logger.Log("Plugin Loaded!");
                 Logger.Log("Plugin created by: " + Creator);
+                Logger.Log("Have Fun! :)");
                 UnturnedPlayerEvents.OnPlayerDeath += UnturnedPlayerEvents_OnPlayerDeath;
             }
             else
@@ -27,7 +28,7 @@ namespace DeathEffects
                 Instance = null;
                 base.UnloadPlugin();
                 {
-                    Logger.Log("Plugin letiltva");
+                    Logger.Log("The plugin is disabled via the config file!");
                 }
                 return;
             }
@@ -35,8 +36,7 @@ namespace DeathEffects
 
         protected override void Unload()
         {
-            Logger.Log("Plugin kikapcsolva");
-            File.Delete(Directory + "/DeathEffects.txt");
+            Logger.Log("Plugin unloaded!");
             UnturnedPlayerEvents.OnPlayerDeath += UnturnedPlayerEvents_OnPlayerDeath;
         }
 
