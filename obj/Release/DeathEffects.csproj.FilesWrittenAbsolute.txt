@@ -1,0 +1,4 @@
+/media/kr4ken/6AF8399DF83969091/Repos/Forks/DeathEffects/bin/Release/DeathEffects.pdb
+/media/kr4ken/6AF8399DF83969091/Repos/Forks/DeathEffects/bin/Release/DeathEffects.dll
+/media/kr4ken/6AF8399DF83969091/Repos/Forks/DeathEffects/obj/Release/DeathEffects.dll
+/media/kr4ken/6AF8399DF83969091/Repos/Forks/DeathEffects/obj/Release/DeathEffects.pdb
